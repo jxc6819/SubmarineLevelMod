@@ -13,7 +13,7 @@ The focus is on hands-on VR interaction, mechanical puzzles, and environmental s
 - Adds new interactive puzzles (wires, levers, gauges, vents, reactor systems)
 - Implements custom visual effects without relying on Unity’s built-in ParticleSystem where possible
 - Supports full level reset without reloading the game
-- Makes normally non-grabbable objects fully interactable in VR
+- Makes normally non-grabbable objects fully interactable in VR by hooking into Schell's custom interaction system
 - Centralized logic for puzzle state, failures, and progression
 
 ---
@@ -69,16 +69,16 @@ The focus is on hands-on VR interaction, mechanical puzzles, and environmental s
 ### Interaction & Grabbables
 
 - **MakeGrabbable.cs**  
-  Converts normal objects into fully grabbable VR objects.
+  Converts custom GameObjects into objects that can be used with Schell's interaction system.
 
 - **WheelScript.cs**  
-  Handles rotation-based interactions for wheels.
+  Handles rotation-based interaction for the main wheel.
 
 - **LeverScript.cs**  
   Controls lever interaction and signals level logic.
 
 - **HatchScript.cs**  
-  Manages hatch unlocking and rotation.
+  Manages the escape pod logic at the end of the level.
 
 - **NeedleScript.cs**  
   Controls gauge needle movement and fires threshold events.
@@ -91,7 +91,7 @@ The focus is on hands-on VR interaction, mechanical puzzles, and environmental s
   Central controller for all wire puzzle logic.
 
 - **WireTubeRenderer.cs**  
-  Renders smooth tube meshes to visually represent wires.
+  Procedurally renders smooth tube meshes to visually represent wires.
 
 - **LooseWire.cs**  
   Represents a cut or disconnected wire.
@@ -100,7 +100,7 @@ The focus is on hands-on VR interaction, mechanical puzzles, and environmental s
   Detects wire cutter usage.
 
 - **SolderListener.cs**  
-  Handles soldering interactions during repairs.
+  Handles soldering interactions.
 
 ---
 
@@ -173,10 +173,10 @@ The focus is on hands-on VR interaction, mechanical puzzles, and environmental s
   Cigar interaction behavior.
 
 - **ChipOrientationHelper.cs**  
-  Helps align puzzle chips correctly.
+  Debug script - helped to align puzzle chips correctly.
 
 - **StopperScript.cs**  
-  Controls stopper mechanics in gauge puzzles.
+  Controls stopper mechanics in gauge puzzle.
 
 - **SubLoopAmbience.cs**  
   Plays looping submarine ambient audio.
