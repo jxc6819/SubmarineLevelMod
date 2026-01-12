@@ -3,7 +3,7 @@
 A custom **Submarine level mod** for *I Expect You To Die 2*, built using **MelonLoader**, **Unity 2019.4**, and **IL2CPP-safe scripting**.
 
 This project merges assets from existing game scenes, adds new interactive systems, and layers in custom puzzle logic, effects, and restart handling.  
-The focus is on **hands-on VR interaction**, mechanical puzzles, and environmental storytelling.
+The focus is on hands-on VR interaction, mechanical puzzles, and environmental storytelling.
 
 ---
 
