@@ -188,4 +188,4 @@ The focus is on hands-on VR interaction, mechanical puzzles, and environmental s
 
 ## Notes
 
-There was minimal AI used in the creation of this project's code. AI was mostly used to assist with the Driver's (as using Unity's particle system and other fx methods are extremely tedious to use without the Unity engine) and other IL2CPP-modding specific challenges
+There was minimal AI used in the creation of this project's code. AI was mostly used to assist with the Drivers (as using Unity's particle system and other fx methods are extremely tedious to use without the Unity engine) and other IL2CPP-modding specific challenges
