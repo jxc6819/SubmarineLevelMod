@@ -5,6 +5,10 @@ A custom **Submarine level mod** for *I Expect You To Die 2*, built using **Melo
 This project merges assets from existing game scenes, adds new interactive systems, and layers in custom puzzle logic, effects, and restart handling.  
 The focus is on hands-on VR interaction, mechanical puzzles, and environmental storytelling.
 
+You can find a full demo video/walkthrough here: https://www.youtube.com/watch?v=6JHkInsZHDc&t=2s
+
+You can also keep up with my other IEYTD mods progress here: https://www.youtube.com/@jamesconnors3820
+
 ---
 
 ## Features
